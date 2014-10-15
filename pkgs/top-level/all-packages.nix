@@ -5870,6 +5870,8 @@ let
 
   libtommath = callPackage ../development/libraries/libtommath { };
 
+  libtomcrypt = callPackage ../development/libraries/libtomcrypt { };
+
   libtorrentRasterbar = callPackage ../development/libraries/libtorrent-rasterbar {
     # fix "unrecognized option -arch" error
     stdenv = if stdenv.isDarwin
