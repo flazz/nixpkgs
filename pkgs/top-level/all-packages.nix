@@ -541,6 +541,8 @@ let
 
   install_name_tool = callPackage ../os-specific/darwin/install_name_tool { };
 
+  ifconfig = callPackage ../os-specific/darwin/ifconfig { };
+
   xcodeenv = callPackage ../development/mobile/xcodeenv { };
 
   titaniumenv = callPackage ../development/mobile/titaniumenv {
@@ -2476,7 +2478,9 @@ let
 
   vpnc = callPackage ../tools/networking/vpnc { };
 
-  openconnect = callPackage ../tools/networking/openconnect.nix { };
+  openconnect = callPackage ../tools/networking/openconnect { };
+
+  openconnect6 = callPackage ../tools/networking/openconnect/6.00.nix { };
 
   vtun = callPackage ../tools/networking/vtun { };
 
