@@ -2309,6 +2309,8 @@ let
 
   stow = callPackage ../tools/misc/stow { };
 
+  stoken = callPackage ../tools/networking/stoken { };
+
   stun = callPackage ../tools/networking/stun { };
 
   stunnel = callPackage ../tools/networking/stunnel { };
